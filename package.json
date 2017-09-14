@@ -1,0 +1,17 @@
+{
+  "name": "newsWords",
+  "version": "1.0.0",
+  "description": "What is the most frequent word appears in news!",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "lanbin1987@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "iconv-lite": "^0.4.19",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {}
+}

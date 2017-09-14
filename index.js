@@ -2,14 +2,15 @@ const request = require('request'),
   cheerio = require('cheerio'),
   iconv = require('iconv-lite'),
   fs = require('fs'),
+  conf = require('./conf.js'),
   headers = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36'
   }
 
 var MAX_DEPATH = 200,
   current_depth = 0,
-  prefix = 'http://news.163.com/17',
-  urlStart = 'http://news.163.com/17/0914/14/CUA5UTIM0001899N.html',
+  prefix = conf.prefix,
+  urlStart = conf.newsURL,
   urlMaps = {},
   wordMaps = {},
   st = Date.now()
